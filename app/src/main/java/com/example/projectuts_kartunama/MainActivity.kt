@@ -10,6 +10,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.projectuts_kartunama.ui.theme.ProjectUts_KartuNamaTheme
 
@@ -39,51 +40,14 @@ fun KartuNamaLayoutKosong() {
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center
     ) {
-        HeaderPlaceholder()
-
-        Spacer(modifier = Modifier.height(32.dp))
-
-        ContactPlaceholder()
+        // Nanti isi konten di sini
     }
 }
-
+@Preview(showBackground = true)
 @Composable
-fun HeaderPlaceholder() {
-    // Bagian atas — nanti diisi logo, nama, jabatan
-    Column(
-        horizontalAlignment = Alignment.CenterHorizontally,
-        verticalArrangement = Arrangement.spacedBy(8.dp)
-    ) {
-        Box(
-            modifier = Modifier
-                .size(100.dp)
-                .clip(androidx.compose.foundation.shape.CircleShape)
-                .padding(8.dp)
-        ) // Placeholder foto
-
-        Box(
-            modifier = Modifier
-                .height(24.dp)
-                .width(120.dp)
-        ) // Placeholder nama
-
-        Box(
-            modifier = Modifier
-                .height(16.dp)
-                .width(180.dp)
-        ) // Placeholder jabatan
+fun KartuNamaLayoutKosongPreview() {
+    ProjectUts_KartuNamaTheme {
+        KartuNamaLayoutKosong()
     }
 }
 
-@Composable
-fun ContactPlaceholder() {
-    // Bagian bawah — nanti diisi info kontak
-    Column(
-        horizontalAlignment = Alignment.Start,
-        verticalArrangement = Arrangement.spacedBy(12.dp)
-    ) {
-        Box(modifier = Modifier.height(16.dp).width(220.dp)) // Email
-        Box(modifier = Modifier.height(16.dp).width(160.dp)) // Telepon
-        Box(modifier = Modifier.height(16.dp).width(200.dp)) // Alamat
-    }
-}
