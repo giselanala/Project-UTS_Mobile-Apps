@@ -3,6 +3,7 @@ package com.example.projectuts_kartunama
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
@@ -10,6 +11,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.projectuts_kartunama.ui.theme.ProjectUts_KartuNamaTheme
@@ -40,10 +42,14 @@ fun KartuNamaLayoutKosong() {
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center
     ) {
-        // Nanti isi konten di sini
+        Image(
+            painter = painterResource(id = R.drawable.android), // nama file di drawable, tanpa ekstensi .png
+            contentDescription = "Logo Android",
+            modifier = Modifier.size(120.dp)
+        )
     }
 }
-@Preview(showBackground = true)
+@Preview(showBackground = true, showSystemUi = true)
 @Composable
 fun KartuNamaLayoutKosongPreview() {
     ProjectUts_KartuNamaTheme {
