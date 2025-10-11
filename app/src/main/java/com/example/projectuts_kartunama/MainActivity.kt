@@ -25,7 +25,7 @@ class MainActivity : ComponentActivity() {
             ProjectUts_KartuNamaTheme {
                 Surface(
                     modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colorScheme.background
+                    color = Color.Gray
                 ) {
                     // Panggil layout utama
                     KartuNamaLayoutKosong()
