@@ -60,13 +60,13 @@ fun KartuNamaLayoutKosong() {
             color = Color.Black
         )
 
-        Spacer(modifier = Modifier.height(32.dp))
+        Spacer(modifier = Modifier.height(8.dp))
     }
     Text(
         text = "Android Daveloper Extraordinaire",
         style = MaterialTheme.typography.headlineMedium,
         color = Color.Green,
-        fontSize = 24.sp
+        fontSize = 12.sp
     )
 
     Spacer(modifier = Modifier.height(12.dp))
