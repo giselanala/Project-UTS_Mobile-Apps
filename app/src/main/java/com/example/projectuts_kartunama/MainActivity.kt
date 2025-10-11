@@ -110,7 +110,7 @@ fun KartuNamaLayoutKosong() {
                     .padding(end = 12.dp)
             )
             Text(
-                text = "@giselfebi",
+                text = "@giselafebriana",
                 fontSize = 15.sp,
                 color = Color.Black
             )
