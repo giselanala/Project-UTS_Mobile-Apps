@@ -61,15 +61,17 @@ fun KartuNamaLayoutKosong() {
         )
 
         Spacer(modifier = Modifier.height(12.dp))
-    }
-    Text(
-        text = "Android Daveloper Extraordinaire",
-        style = MaterialTheme.typography.headlineMedium,
-        color = Color.Green,
-        fontSize = 17.sp
-    )
 
-    Spacer(modifier = Modifier.height(17.dp))
+        Text(
+            text = "Android Daveloper Extraordinaire",
+            style = MaterialTheme.typography.headlineMedium,
+            color = Color.Green,
+            fontSize = 17.sp,
+            modifier = Modifier.align(Alignment.CenterHorizontally)
+        )
+
+        Spacer(modifier = Modifier.height(17.dp))
+    }
 
 }
 @Preview(showBackground = true, showSystemUi = true)
