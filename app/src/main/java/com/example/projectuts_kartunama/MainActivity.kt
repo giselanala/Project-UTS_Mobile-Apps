@@ -87,7 +87,7 @@ fun KartuNamaLayoutKosong() {
                     .padding(end = 12.dp)
             )
             Text(
-                text = "+62 821 6538 7890",
+                text = "+62 821 6298 3537",
                 fontSize = 15.sp,
                 color = Color.Black
             )
