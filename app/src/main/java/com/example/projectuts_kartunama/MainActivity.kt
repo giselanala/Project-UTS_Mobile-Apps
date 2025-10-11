@@ -71,6 +71,8 @@ fun KartuNamaLayoutKosong() {
         )
 
         Spacer(modifier = Modifier.height(17.dp))
+
+
     }
 
 }
