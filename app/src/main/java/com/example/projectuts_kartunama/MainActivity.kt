@@ -72,9 +72,73 @@ fun KartuNamaLayoutKosong() {
 
         Spacer(modifier = Modifier.height(17.dp))
 
+        Row(
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.Start,
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(start = 32.dp, top = 4.dp, end = 24.dp)
+        ) {
+            Image(
+                painter = painterResource(id = R.drawable.android_logo),
+                contentDescription = "android_logo",
+                modifier = Modifier
+                    .size(24.dp)
+                    .padding(end = 12.dp)
+            )
+            Text(
+                text = "+62 821 6538 7890",
+                fontSize = 15.sp,
+                color = Color.Black
+            )
+        }
 
+        Spacer(modifier = Modifier.height(8.dp))
+
+        Row(
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.Start,
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(start = 32.dp, top = 4.dp, end = 24.dp)
+        ) {
+            Image(
+                painter = painterResource(id = R.drawable.android_berbagi),
+                contentDescription = "android_berbagi",
+                modifier = Modifier
+                    .size(24.dp)
+                    .padding(end = 12.dp)
+            )
+            Text(
+                text = "@giselfebi",
+                fontSize = 15.sp,
+                color = Color.Black
+            )
+        }
+
+        Spacer(modifier = Modifier.height(8.dp))
+
+        Row(
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.Start,
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(start = 32.dp, top = 4.dp, end = 24.dp)
+        ) {
+            Image(
+                painter = painterResource(id = R.drawable.android_email),
+                contentDescription = "android_email",
+                modifier = Modifier
+                    .size(24.dp)
+                    .padding(end = 12.dp)
+            )
+            Text(
+                text = "gisela.febriana@gmail.com",
+                fontSize = 15.sp,
+                color = Color.Black
+            )
+        }
     }
-
 }
 @Preview(showBackground = true, showSystemUi = true)
 @Composable
